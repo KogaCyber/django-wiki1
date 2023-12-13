@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block titleup %}{{ name }}{% endblock titleup %}{% block main %}<div class="container">    <div class="ptexts">        {% for category in title %}        <a href="{% url 'article' pk=category.pk %}" class="list-group-item">{{category.titles}}</a>        {% endfor %}    </div></div>{% endblock main %}

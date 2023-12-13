@@ -1,0 +1,18 @@
+<div class="sidebar">
+
+    <form class="row g-3 needs-validation" action="{% url 'search' %}" method="get">
+        <div class="col-md-10">
+            <label for="validationCustom03" class="form-label" >Search</label>
+            <input type="text" class="form-control" id="validationCustom03" name="q" placeholder="search..."><br>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form><br>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'add_article' %}">Create</a>
+    <a href="{% url 'random_page' %}">Random page</a>
+</div>
+
+
